@@ -1,0 +1,11 @@
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/LoanProcessingWorkflow.java
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/Starter.java
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/model/SimpleCustomerMap.java
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/model/CustomerInfoDatabase.java
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/model/CustomerInfo.java
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/model/ChargeInput.java
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/LoanProcessingWorkflowImpl.java
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/LoanProcessingActivitiesImpl.java
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/Constants.java
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/LoanProcessingActivities.java
+/Users/masonegger/Code/Temporal/edu-102-java-code/exercises/version-workflow/solution/versionworkflow/src/main/java/versionworkflow/LoanProcessingWorker.java

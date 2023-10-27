@@ -1,0 +1,11 @@
+versionworkflow/model/CustomerInfoDatabase.class
+versionworkflow/model/CustomerInfo.class
+versionworkflow/model/ChargeInput.class
+versionworkflow/LoanProcessingActivities.class
+versionworkflow/Constants.class
+versionworkflow/LoanProcessingWorkflow.class
+versionworkflow/LoanProcessingActivitiesImpl.class
+versionworkflow/Starter.class
+versionworkflow/LoanProcessingWorkflowImpl.class
+versionworkflow/LoanProcessingWorker.class
+versionworkflow/model/SimpleCustomerMap.class
