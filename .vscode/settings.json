@@ -1,0 +1,11 @@
+{
+    "editor.minimap.enabled": false,
+    "java.format.settings.url": "https://github.com/MasonEgger/custom-java-style/blob/844f6762fa48144b61c92d5ab1f47030b09b72f6/custom-eclipse-java-google-style.xml",
+    "java.checkstyle.configuration": "/google_checks.xml",
+    "[java]": {
+        "editor.tabSize": 2
+    },
+    "workbench.editorAssociations": {
+        "README.md": "vscode.markdown.preview.editor",
+    }
+}
