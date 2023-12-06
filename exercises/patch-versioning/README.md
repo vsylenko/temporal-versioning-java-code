@@ -83,9 +83,9 @@ the code.
    `String confirmation = activities.sendThankYouToCustomer(info);` from just
    before the loop to just after the loop.
 1. Save your change and exit the editor.
+1. Stop the Worker by pressing Ctrl-C in the terminal window where you stasrted it.
 1. Compile the code with `mvn clean compile`
-1. Restart the Worker by pressing Ctrl-C in the terminal
-   window where you started it and then running the
+1. Restart the Worker by then running the
    `mvn exec:java -Dexec.mainClass="versionworkflow.LoanProcessingWorker"` command again.
    1. If you're in the GitPod environment, you can run `ex1w`
 1. The change you just made to the Workflow logic takes effect immediately, although
@@ -120,7 +120,7 @@ and responds by throwing the non-deterministic error you see.
      - Create the Workflow Replayer and call it from within the assert
      - Replay the Event History in the JSON file you downloaded
 2. Save your changes
-3. Run `mvn clean test`. You should find that this fails, which confirms
+3. Run `mvn clean compile test`. You should find that this fails, which confirms
    altering the execution order of the `sendThankYouToCustomer`
    Activity) breaks compatibility. In the final part of this
    exercise, you will use the `getVersion` API to implement
@@ -149,31 +149,34 @@ is `1`.
    words, copy the same lines you moved after the loop to inside the
    braces for this conditional statement, so that this Activity will be
    called if the condition evaluates to `true`.
-2. Wrap the code you previously moved after the loop in a
+1. Wrap the code you previously moved after the loop in a
    conditional statement that tests if `version` is equal to
    `1`. This will handle the Activity for Workflow
    Executions started after the change.
-3. Change the duration of the `Workflow.sleep` statement at the
+1. Change the duration of the `Workflow.sleep` statement at the
    bottom of the loop back to 3 seconds. This is unrelated to
    versioning and changing the duration of a timer does not require versioning,
    gbut will help you see the results more quickly.
-4. Run `mvn clean test` again. You should find it succeeds this time,
+1. Run `mvn clean compile test` again. You should find it succeeds this time,
    since you've used the `getVersion` API to restore compatibility with
    the previous execution.
-5. Restart the Worker by pressing Ctrl-C in the terminal
+1. Restart the Worker by pressing Ctrl-C in the terminal
    window where you started it and then running the `mvn exec:java -Dexec.mainClass="versionworkflow.LoanProcessingWorker"` command again.
    1. If you're in the GitPod environment, you can run `ex1w`
-6. Return to the detail page for this Workflow Execution
-7. Click the downward-facing arrow to the right of the
+1. Return to the detail page for this Workflow Execution
+1. Click the downward-facing arrow to the right of the
    **Request Cancellation** menu near the upper-right portion of
    the page and select the **Reset** option.
-   - Choose **Reset to last Workflow Task**
+   - Select the last **WorkflowTaskCompleted** event to reset to
    - Enter "Using versioning to fix a bad deployment" as the reason
    - Click the **Confirm** button
-8. Follow the **here** link in the confirmation message shown
-   at the top of the screen, which points to the new Workflow
-   Execution created when you reset the Workflow.
-9. Enable the auto-refresh feature using the toggle button near
+1. The Workflow will now be terminated a new Workflow started, resuming from
+   the specified Workflow Task. Return to the dashboard and view progress of
+   that Workflow Execution.
+   1. The WebUI may still show a warning about **Reset Workflow** at the top of
+      the page. Monitor the Event History and the log output from the Worker to
+      confirm that progress has resumed.
+1. Enable the auto-refresh feature using the toggle button near
    the top of the page. You should find that the Workflow Execution
    completes successfully within the next 30 seconds.
 
