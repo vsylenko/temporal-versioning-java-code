@@ -9,8 +9,8 @@ training course.
 
 | Directory Name                | Exercise                                            |
 | :---------------------------- | :-------------------------------------------------- |
-| `exercises/patch-versioning`  | [Exercise 1](exercises/durable-execution/README.md) |
-| `exercises/worker-versioning` | [Exercise 2](exercises/testing-code/README.md)      |
+| `exercises/patch-versioning`  | [Exercise 1](exercises/patch-versioning/README.md)  |
+| `exercises/worker-versioning` | [Exercise 2](exercises/worker-versioning/README.md) |
 
 ## Reference
 

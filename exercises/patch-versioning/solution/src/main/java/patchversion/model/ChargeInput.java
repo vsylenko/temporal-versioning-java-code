@@ -1,21 +1,18 @@
-package versionworkflow.model;
+package patchversion.model;
 
-public class CustomerInfo {
+public class ChargeInput {
     private String customerID;
-    private String name;
-    private String emailAddress;
     private int amount;
+    private int periodNumber;
     private int numberOfPeriods;
 
-    public CustomerInfo() {
-
+    public ChargeInput() {
     }
 
-    public CustomerInfo(String customerID, String name, String emailAddress, int amount, int numberOfPeriods) {
+    public ChargeInput(String customerID, int amount, int periodNumber, int numberOfPeriods) {
         this.customerID = customerID;
-        this.name = name;
-        this.emailAddress = emailAddress;
         this.amount = amount;
+        this.periodNumber = periodNumber;
         this.numberOfPeriods = numberOfPeriods;
     }
 
@@ -27,28 +24,20 @@ public class CustomerInfo {
         this.customerID = customerID;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmailAddress() {
-        return emailAddress;
-    }
-
-    public void setEmailAddress(String emailAddress) {
-        this.emailAddress = emailAddress;
-    }
-
     public int getAmount() {
         return amount;
     }
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    public int getPeriodNumber() {
+        return periodNumber;
+    }
+
+    public void setPeriodNumber(int periodNumber) {
+        this.periodNumber = periodNumber;
     }
 
     public int getNumberOfPeriods() {

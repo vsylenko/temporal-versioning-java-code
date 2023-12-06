@@ -1,9 +1,9 @@
-package versionworkflow;
+package patchversion;
 
 import org.slf4j.Logger;
 
-import versionworkflow.model.CustomerInfo;
-import versionworkflow.model.ChargeInput;
+import patchversion.model.CustomerInfo;
+import patchversion.model.ChargeInput;
 
 import io.temporal.workflow.Workflow;
 import io.temporal.activity.ActivityOptions;

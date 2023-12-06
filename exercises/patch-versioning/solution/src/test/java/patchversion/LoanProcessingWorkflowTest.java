@@ -1,7 +1,7 @@
-package versionworkflow;
+package patchversion;
 
-import versionworkflow.LoanProcessingWorkflowImpl;
-import versionworkflow.LoanProcessingWorkflow;
+import patchversion.LoanProcessingWorkflowImpl;
+import patchversion.LoanProcessingWorkflow;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;

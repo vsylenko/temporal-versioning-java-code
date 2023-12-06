@@ -1,4 +1,4 @@
-package versionworkflow;
+package patchversion;
 
 public class Constants {
 

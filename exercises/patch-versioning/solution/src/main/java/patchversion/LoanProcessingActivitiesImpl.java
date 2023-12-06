@@ -1,7 +1,7 @@
-package versionworkflow;
+package patchversion;
 
-import versionworkflow.model.ChargeInput;
-import versionworkflow.model.CustomerInfo;
+import patchversion.model.ChargeInput;
+import patchversion.model.CustomerInfo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
