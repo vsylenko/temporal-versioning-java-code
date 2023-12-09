@@ -3,8 +3,8 @@ alias webui="gp preview $(gp url 8080)"
 
 alias ex1="cd ${GITPOD_REPO_ROOT}/exercises/patch-versioning/practice"
 alias ex1s="cd ${GITPOD_REPO_ROOT}/exercises/patch-versioning/solution"
-alias ex1w="mvn clean compile exec:java -Dexec.mainClass='versionworkflow.LoanProcessingWorker'"
-alias ex1st="mvn clean compile exec:java -Dexec.mainClass='versionworkflow.Starter' -Dexec.args='a100'"
+alias ex1w="mvn clean compile exec:java -Dexec.mainClass='patchversion.LoanProcessingWorker'"
+alias ex1st="mvn clean compile exec:java -Dexec.mainClass='patchversion.Starter' -Dexec.args='a100'"
 alias ex1h="temporal workflow show --workflow-id=loan-processing-workflow-customer-a100 --fields long  --output json > history_for_original_execution.json"
 
 alias ex2="cd ${GITPOD_REPO_ROOT}/exercises/worker-versioning/practice"
