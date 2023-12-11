@@ -1,18 +1,23 @@
-package versionworkflow;
+package patchversion;
 
 import org.slf4j.Logger;
 
-import versionworkflow.model.CustomerInfo;
-import versionworkflow.model.ChargeInput;
+import patchversion.model.CustomerInfo;
+import patchversion.model.ChargeInput;
 
 import io.temporal.workflow.Workflow;
+import io.temporal.common.SearchAttributeKey;
+import patchversion.LoanProcessingActivities;
+import patchversion.LoanProcessingWorkflow;
 import io.temporal.activity.ActivityOptions;
 
 import java.time.Duration;
+import java.util.List;
 
 public class LoanProcessingWorkflowImpl implements LoanProcessingWorkflow {
 
   public static final Logger logger = Workflow.getLogger(LoanProcessingWorkflowImpl.class);
+  public static final SearchAttributeKey<List<String>> TEMPORAL_CHANGE_VERSION = SearchAttributeKey.forKeywordList("TemporalChangeVersion");
 
   ActivityOptions options = ActivityOptions.newBuilder()
       .setStartToCloseTimeout(Duration.ofSeconds(5))

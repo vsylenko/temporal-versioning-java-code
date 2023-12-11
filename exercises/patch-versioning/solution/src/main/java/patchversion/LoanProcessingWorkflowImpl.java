@@ -5,14 +5,18 @@ import org.slf4j.Logger;
 import patchversion.model.CustomerInfo;
 import patchversion.model.ChargeInput;
 
+import io.temporal.common.SearchAttributeKey;
 import io.temporal.workflow.Workflow;
 import io.temporal.activity.ActivityOptions;
-
+import java.util.Arrays;
+import java.util.List;
 import java.time.Duration;
 
 public class LoanProcessingWorkflowImpl implements LoanProcessingWorkflow {
 
   public static final Logger logger = Workflow.getLogger(LoanProcessingWorkflowImpl.class);
+
+  public static final SearchAttributeKey<List<String>> TEMPORAL_CHANGE_VERSION = SearchAttributeKey.forKeywordList("TemporalChangeVersion");
 
   ActivityOptions options =
       ActivityOptions.newBuilder().setStartToCloseTimeout(Duration.ofSeconds(5)).build();
@@ -28,7 +32,13 @@ public class LoanProcessingWorkflowImpl implements LoanProcessingWorkflow {
 
     int totalPaid = 0;
 
-    int version = Workflow.getVersion("MovedThankYouAfterLoop", Workflow.DEFAULT_VERSION, 1);
+    String versionKey = "MovedThankYouAfterLoop";
+    int version = Workflow.getVersion(versionKey, Workflow.DEFAULT_VERSION, 1);
+
+    if (version != Workflow.DEFAULT_VERSION) {
+      Workflow.upsertTypedSearchAttributes(Constants.TEMPORAL_CHANGE_VERSION
+          .valueSet(Arrays.asList((versionKey + "-" + version))));
+    }
 
     if (version == Workflow.DEFAULT_VERSION) {
       // for workflow executions started before the change, send thank you before the

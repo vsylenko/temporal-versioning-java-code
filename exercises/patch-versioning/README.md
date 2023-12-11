@@ -130,10 +130,16 @@ and responds by throwing the non-deterministic error you see.
 ## Part D: Version the Change with the `getVersion` API
 
 Just above the loop, where the Activity call was prior to
-the change, add the following line:
+the change, add the following lines:
 
 ```java
- int version = Workflow.getVersion("MovedThankYouAfterLoop", Workflow.DEFAULT_VERSION, 1);
+String versionKey = "MovedThankYouAfterLoop";
+int version = Workflow.getVersion(versionKey, Workflow.DEFAULT_VERSION, 1);
+
+if (version != Workflow.DEFAULT_VERSION) {
+Workflow.upsertTypedSearchAttributes(Constants.TEMPORAL_CHANGE_VERSION
+      .valueSet(Arrays.asList((versionKey + "-" + version))));
+}
 ```
 
 This establishes a logical branch for code execution, identified

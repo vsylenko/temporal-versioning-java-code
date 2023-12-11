@@ -1,4 +1,4 @@
-package versionworkflow.model;
+package patchversion.model;
 
 public class ChargeInput {
   private String customerID;
