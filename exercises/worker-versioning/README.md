@@ -52,6 +52,7 @@ fully working example code.
          .setUseBuildIdForVersioning(true)
          .build();
       ```
+   1. **Note:** This code would usually only need to be run once. In a production system you would not run this as part of your client, but more likely as part of your build system on initial deployment, either via the SDK or the Command Line Tool
 
 1. Edit the `Stater.java` to inform the Task Queue about your Worker's Build ID before starting your Workflow.
    ```java
