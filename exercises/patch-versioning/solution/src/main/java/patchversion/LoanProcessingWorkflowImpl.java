@@ -36,7 +36,7 @@ public class LoanProcessingWorkflowImpl implements LoanProcessingWorkflow {
     int version = Workflow.getVersion(versionKey, Workflow.DEFAULT_VERSION, 1);
 
     if (version != Workflow.DEFAULT_VERSION) {
-      Workflow.upsertTypedSearchAttributes(Constants.TEMPORAL_CHANGE_VERSION
+      Workflow.upsertTypedSearchAttributes(TEMPORAL_CHANGE_VERSION
           .valueSet(Arrays.asList((versionKey + "-" + version))));
     }
 
