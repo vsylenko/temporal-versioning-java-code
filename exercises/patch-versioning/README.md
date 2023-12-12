@@ -49,7 +49,7 @@ the code.
    download the event history:
    ```bash
    temporal workflow show \
-      --workflow-id=loan-processing-workflow-customer-a100 \
+      --workflow-id loan-processing-workflow-customer-a100 \
       --fields long  \
       --output json > history_for_original_execution.json
    ```
