@@ -40,7 +40,7 @@ fully working example code.
    1. If you're in the GitPod environment you can run the shortcut command `ex1w`
 1. Start the Workflow in another terminal by running the command `mvn exec:java -Dexec.mainClass="pizzaworkflow.Starter"`
    1. If you're in the GitPod environment you can run the shortcut command `ex1st`
-1. This creates an environment where an unverioned Worker is already running.
+1. This creates an environment where an unversioned Worker is already running.
 1. Edit the `PizzaWorker.java` file to add a Build ID to your Worker and opt in
    to Worker Versioning.
 

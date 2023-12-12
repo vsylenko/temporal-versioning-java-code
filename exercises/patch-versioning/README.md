@@ -166,7 +166,7 @@ is `1`.
 1. Change the duration of the `Workflow.sleep` statement at the
    bottom of the loop back to 3 seconds. This is unrelated to
    versioning and changing the duration of a timer does not require versioning,
-   gbut will help you see the results more quickly.
+   but will help you see the results more quickly.
 1. Run `mvn clean compile test` again. You should find it succeeds this time,
    since you've used the `getVersion` API to restore compatibility with
    the previous execution.
