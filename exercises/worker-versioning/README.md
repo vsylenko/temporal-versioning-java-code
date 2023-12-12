@@ -33,8 +33,8 @@ Before enabling Worker Versioning, run this Workflow without making any further
 modifications. Unlike our other exercises, the `practice` subdirectory contains
 fully working example code.
 
-1. Navigate to `exercises/patch-versioning/practice` by running
-   `cd exercises/patch-versioning/practice`
+1. Navigate to `exercises/worker-versioning/practice` by running
+   `cd exercises/worker-versioning/practice`
    1. If you're in the GitPod environment you can run the shortcut command `ex2`
 1. Launch the Worker in one terminal by running the command `mvn exec:java -Dexec.mainClass="pizzaworkflow.PizzaWorker"`
    1. If you're in the GitPod environment you can run the shortcut command `ex2w`
