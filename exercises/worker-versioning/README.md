@@ -35,11 +35,11 @@ fully working example code.
 
 1. Navigate to `exercises/patch-versioning/practice` by running
    `cd exercises/patch-versioning/practice`
-   1. If you're in the GitPod environment you can run the shortcut command `ex1`
+   1. If you're in the GitPod environment you can run the shortcut command `ex2`
 1. Launch the Worker in one terminal by running the command `mvn exec:java -Dexec.mainClass="pizzaworkflow.PizzaWorker"`
-   1. If you're in the GitPod environment you can run the shortcut command `ex1w`
+   1. If you're in the GitPod environment you can run the shortcut command `ex2w`
 1. Start the Workflow in another terminal by running the command `mvn exec:java -Dexec.mainClass="pizzaworkflow.Starter"`
-   1. If you're in the GitPod environment you can run the shortcut command `ex1st`
+   1. If you're in the GitPod environment you can run the shortcut command `ex2st`
 1. This creates an environment where an unversioned Worker is already running.
 1. Edit the `PizzaWorker.java` file to add a Build ID to your Worker and opt in
    to Worker Versioning.
@@ -61,10 +61,10 @@ fully working example code.
    ```
 1. Run a new version of your worker by running `mvn exec:java -Dexec.mainClass="pizzaworkflow.PizzaWorker"`
    in a new terminal window.
-   1. If you're in the GitPod environment you can run the shortcut command `ex1w`
+   1. If you're in the GitPod environment you can run the shortcut command `ex2w`
    1. **Note**: You do not need to terminate your old worker. If you execute
       your Workflow again by running `mvn exec:java -Dexec.mainClass="pizzaworkflow.Starter"`
-      (or `ex1st` if in GitPod) again, you should see some output from the
+      (or `ex2st` if in GitPod) again, you should see some output from the
       terminal window of your new worker. This indicates that the Workflow was
       chosen and run by the new, versioned worker, and the unversioned worker ignored
       it.
