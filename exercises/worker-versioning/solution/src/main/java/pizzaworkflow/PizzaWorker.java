@@ -14,7 +14,7 @@ public class PizzaWorker {
     WorkerFactory factory = WorkerFactory.newInstance(client);
 
     WorkerOptions workerOptions = WorkerOptions.newBuilder()
-         .setBuildId("v2.0") // Part A
+         .setBuildId("v2") // Part A
          //.setBuildId("v2.1") // Part C
          .setUseBuildIdForVersioning(true)
          .build();
