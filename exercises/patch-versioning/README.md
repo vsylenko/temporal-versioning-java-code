@@ -45,18 +45,22 @@ the code.
    should complete within 30 seconds.
 1. You will now download the history of this execution in JSON
    format so that you can replay it in an automated test that
-   you will develop later in this exercise. Open the Web UI,
-   navigate to the detail page for this execution, and then click
-   the **Download** button that appears on the right side of the
-   page, just above the table showing the Event History.
-   Save the file as `history_for_original_execution.json` in your
-   `practice` directory.
-   - NOTE: If you are running this exercise in GitPod, you may
-     be unable to download the file, due to the embedded browser
-     used in that environment. In this case, run the following
-     command from the `practice` directory `temporal workflow show --workflow-id=loan-processing-workflow-customer-a100 --fields long  --output json > history_for_original_execution.json` to
-     retrieve a copy.
-     - You an also use the `ex1h` command within the GitPod environment to save yourself some typing.
+   you will develop later in this exercise. Use the `temporal` cli to
+   download the event history:
+   ```bash
+   temporal workflow show \
+      --workflow-id=loan-processing-workflow-customer-a100 \
+      --fields long  \
+      --output json > history_for_original_execution.json
+   ```
+   - You an also use the `ex1h` command within the GitPod environment to save yourself some typing.
+   - **NOTE** You can also download the event history from the Web UI, however, this
+     is currently not supported in the GitPod environment. To download the
+     history navigate to the detail page for this execution, and then click
+     the **Download** button that appears on the right side of the
+     page, just above the table showing the Event History.
+     Save the file as `history_for_original_execution.json` in your
+     `practice` directory.
 1. In the next section, you will make and deploy an incompatible
    change, causing a non-deterministic error for an open execution.
    To allow time for you to do these things, edit the `LoanProcessingWorkflowImpl.java`
