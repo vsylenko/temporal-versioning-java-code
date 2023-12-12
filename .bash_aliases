@@ -9,8 +9,8 @@ alias ex1h="temporal workflow show --workflow-id=loan-processing-workflow-custom
 
 alias ex2="cd ${GITPOD_REPO_ROOT}/exercises/worker-versioning/practice"
 alias ex2s="cd ${GITPOD_REPO_ROOT}/exercises/worker-versioning/solution"
-alias ex2w="mvn exec:java -Dexec.mainClass='pizzaworkflow.PizzaWorker'"
-alias ex2st="mvn exec:java -Dexec.mainClass='pizzaworkflow.Starter'"
+alias ex2w="mvn clean compile exec:java -Dexec.mainClass='pizzaworkflow.PizzaWorker'"
+alias ex2st="mvn clean compile exec:java -Dexec.mainClass='pizzaworkflow.Starter'"
 alias ex2t="mvn test"
 
 

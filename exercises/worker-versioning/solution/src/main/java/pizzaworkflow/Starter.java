@@ -21,8 +21,12 @@ public class Starter {
 
     WorkflowClient client = WorkflowClient.newInstance(service);
 
+    /* Part C solution
+     client.updateWorkerBuildIdCompatability(Constants.TASK_QUEUE_NAME,
+        BuildIdOperation.newCompatibleVersion("v2.1", "v2")); // Part C
+     */
     client.updateWorkerBuildIdCompatability(Constants.TASK_QUEUE_NAME,
-        BuildIdOperation.newIdInNewDefaultSet("v2"));
+        BuildIdOperation.newIdInNewDefaultSet("v2")); // Part A
 
     PizzaOrder order = createPizzaOrder();
 
