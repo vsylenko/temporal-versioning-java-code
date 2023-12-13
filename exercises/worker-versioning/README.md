@@ -63,7 +63,7 @@ fully working example code.
    in a new terminal window.
    1. If you're in the GitPod environment you can run the shortcut command `ex2w`
    1. **Note**: You do not need to terminate your old worker. If you execute
-      your Workflow again by running `mvn exec:java -Dexec.mainClass="pizzaworkflow.Starter"`
+      your Workflow again by running `mvn clean compile exec:java -Dexec.mainClass="pizzaworkflow.Starter"`
       (or `ex2st` if in GitPod) again, you should see some output from the
       terminal window of your new worker. This indicates that the Workflow was
       chosen and run by the new, versioned worker, and the unversioned worker ignored
@@ -154,8 +154,12 @@ Queue with new a Worker Version. You can accomplish the same thing by running
    1. Update the `BuildID` field from your ` WorkerOptions` declaration to
       reflect the new `v2.1` Version, recompile the Worker and restart your Worker
       once again.
+      1. Launch the Worker by running the command `mvn clean compile exec:java -Dexec.mainClass="pizzaworkflow.PizzaWorker"`
+         1. If you're in the GitPod environment you can run the shortcut command `ex2w`
    1. Re-run your Workflow starter. You should observe that the new `v2` Worker
       executed the Workflow, demonstrating that both versions within the Version
       Set are compatible.
+         1. Start the Workflow in another terminal by running the command `mvn clean compile exec:java -Dexec.mainClass="pizzaworkflow.Starter"`
+            1. If you're in the GitPod environment you can run the shortcut command `ex2st`
 
 ### This is the end of the exercise.
