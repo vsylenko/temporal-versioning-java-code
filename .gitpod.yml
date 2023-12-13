@@ -29,12 +29,6 @@ tasks:
   - name: Terminal
     command: |
       gp open README.md
-      pushd exercises/patch-versioning/practice
-      mvn clean compile
-      popd
-      pushd exercises/worker-versioning/practice
-      mvn clean compile
-      popd
       source /workspace/edu-versioning-java-code/.bash_aliases
       clear
       echo "Use this terminal to run commands.."
