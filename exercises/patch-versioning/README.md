@@ -55,11 +55,13 @@ the code.
    - You an also use the `ex1h` command within the GitPod environment to save yourself some typing.
    - **NOTE** You can also download the event history from the Web UI, however, this
      is currently not supported in the GitPod environment. To download the
-     history navigate to the detail page for this execution, and then click
-     the **Download** button that appears on the right side of the
-     page, just above the table showing the Event History.
-     Save the file as `history_for_original_execution.json` in your
-     `practice` directory.
+     history navigate to the **Event History** section
+   of the detail page for this execution, and then click the
+   **Download** button just above the table showing the Event History.
+   In the **Download JSON** dialog, disable the
+   **Decode Event History** toggle, and then click **Download**. Save
+   the file as `history_for_original_execution.json` in your
+   `practice` directory.
 1. In the next section, you will make and deploy an incompatible
    change, causing a non-deterministic error for an open execution.
    To allow time for you to do these things, edit the `LoanProcessingWorkflowImpl.java`
