@@ -9,10 +9,9 @@ It's important to remember that the example code used in this course was designe
 
 ## Hands-On Exercises
 
-| Directory Name                | Exercise                                            |
-| :---------------------------- | :-------------------------------------------------- |
-| `exercises/patch-versioning`  | [Exercise 1](exercises/patch-versioning/README.md)  |
-| `exercises/worker-versioning` | [Exercise 2](exercises/worker-versioning/README.md) |
+| Directory Name               | Exercise                                           |
+| :--------------------------- | :------------------------------------------------- |
+| `exercises/patch-versioning` | [Exercise 1](exercises/patch-versioning/README.md) |
 
 ## Reference
 
