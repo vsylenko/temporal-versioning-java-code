@@ -29,7 +29,7 @@ the code.
 
 ## Part A: Run a Workflow to Completion
 
-1. Change directories to the `exercises/patch-versioning/practice` directory.
+1. Change directories to the `exercises/version-workflow/practice` directory.
    1. If you're in the GitPod environment you can run `ex1`
 1. Run `mvn clean compile exec:java -Dexec.mainClass="patchversion.LoanProcessingWorker"`
    in a terminal to start a Worker
