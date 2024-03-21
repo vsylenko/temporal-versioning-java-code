@@ -11,7 +11,7 @@ It's important to remember that the example code used in this course was designe
 
 | Directory Name               | Exercise                                           |
 | :--------------------------- | :------------------------------------------------- |
-| `exercises/patch-versioning` | [Exercise 1](exercises/patch-versioning/README.md) |
+| `exercises/version-workflow` | [Exercise 1](exercises/version-workflow/README.md) |
 
 ## Reference
 
@@ -31,5 +31,5 @@ clicking the button below:
 
 Alternatively, you can follow
 [these instructions](https://learn.temporal.io/getting_started/java/dev_environment/) to
-set up your own Temporal Cluster with Docker Compose, which you can use as an
+run your own Temporal Cluster locally, which you can use as an
 exercise environment.
