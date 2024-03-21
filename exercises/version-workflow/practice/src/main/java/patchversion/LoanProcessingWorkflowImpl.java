@@ -1,14 +1,14 @@
-package patchversion;
+package getversion;
 
 import org.slf4j.Logger;
 
-import patchversion.model.CustomerInfo;
-import patchversion.model.ChargeInput;
+import getversion.model.CustomerInfo;
+import getversion.model.ChargeInput;
 
 import io.temporal.workflow.Workflow;
 import io.temporal.common.SearchAttributeKey;
-import patchversion.LoanProcessingActivities;
-import patchversion.LoanProcessingWorkflow;
+import getversion.LoanProcessingActivities;
+import getversion.LoanProcessingWorkflow;
 import io.temporal.activity.ActivityOptions;
 
 import java.time.Duration;

@@ -1,4 +1,4 @@
-package patchversion;
+package getversion;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 

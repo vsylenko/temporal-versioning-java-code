@@ -31,10 +31,10 @@ the code.
 
 1. Change directories to the `exercises/version-workflow/practice` directory.
    1. If you're in the GitPod environment you can run `ex1`
-1. Run `mvn clean compile exec:java -Dexec.mainClass="patchversion.LoanProcessingWorker"`
+1. Run `mvn clean compile exec:java -Dexec.mainClass="getversion.LoanProcessingWorker"`
    in a terminal to start a Worker
    1. If you're in the GitPod environment, you can run `ex1w`
-1. Run `mvn clean compile exec:java -Dexec.mainClass="patchversion.Starter" -Dexec.args="a100"`
+1. Run `mvn clean compile exec:java -Dexec.mainClass="getversion.Starter" -Dexec.args="a100"`
    in another terminal. This will start a Workflow that processes the loan for
    customer ID `a100`.
    1. If you're in the GitPod environment, you can run `ex1st`
@@ -70,9 +70,9 @@ the code.
 1. Save your change to the `LoanProcessingWorkflowImpl.java` file and exit the editor
 1. Compile the code with `mvn clean compile`
 1. Restart the Worker by pressing Ctrl-C in the terminal window
-   from step 1 and running the `mvn clean compile exec:java -Dexec.mainClass="patchversion.LoanProcessingWorker"` command again
+   from step 1 and running the `mvn clean compile exec:java -Dexec.mainClass="getversion.LoanProcessingWorker"` command again
    1. If you're in the GitPod environment, you can run `ex1w`
-1. Run the Workflow again: `mvn clean compile exec:java -Dexec.mainClass="patchversion.Starter" -Dexec.args="a100"`
+1. Run the Workflow again: `mvn clean compile exec:java -Dexec.mainClass="getversion.Starter" -Dexec.args="a100"`
    1. If you're in the GitPod environment, you can run `ex1st`
 1. Use the Web UI to verify that the Workflow Execution from the
    previous step is running before proceeding with the next part
@@ -91,7 +91,7 @@ the code.
 1. Stop the Worker by pressing Ctrl-C in the terminal window where you stasrted it.
 1. Compile the code with `mvn clean compile`
 1. Restart the Worker by then running the
-   `mvn clean compile exec:java -Dexec.mainClass="patchversion.LoanProcessingWorker"` command again.
+   `mvn clean compile exec:java -Dexec.mainClass="getversion.LoanProcessingWorker"` command again.
    1. If you're in the GitPod environment, you can run `ex1w`
 1. The change you just made to the Workflow logic takes effect immediately, although
    the Worker immediately begins using the updated code you
@@ -172,7 +172,7 @@ is `1`.
    since you've used the `getVersion` API to restore compatibility with
    the previous execution.
 1. Restart the Worker by pressing Ctrl-C in the terminal
-   window where you started it and then running the `mvn clean compile exec:java -Dexec.mainClass="patchversion.LoanProcessingWorker"` command again.
+   window where you started it and then running the `mvn clean compile exec:java -Dexec.mainClass="getversion.LoanProcessingWorker"` command again.
    1. If you're in the GitPod environment, you can run `ex1w`
 1. Return to the detail page for this Workflow Execution
 1. Click the downward-facing arrow to the right of the

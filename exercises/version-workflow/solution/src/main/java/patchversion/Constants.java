@@ -1,4 +1,4 @@
-package patchversion;
+package getversion;
 
 import io.temporal.common.SearchAttributeKey;
 import java.util.List;

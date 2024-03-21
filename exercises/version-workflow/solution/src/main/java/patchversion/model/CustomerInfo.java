@@ -1,4 +1,4 @@
-package patchversion.model;
+package getversion.model;
 
 public class CustomerInfo {
     private String customerID;

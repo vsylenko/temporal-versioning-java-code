@@ -1,6 +1,6 @@
-package patchversion.model;
+package getversion.model;
 
-import patchversion.model.CustomerInfoDatabase;
+import getversion.model.CustomerInfoDatabase;
 
 public interface CustomerInfoDatabase {
   CustomerInfo get(String customerId);

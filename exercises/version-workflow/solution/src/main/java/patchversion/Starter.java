@@ -1,12 +1,12 @@
-package patchversion;
+package getversion;
 
 import io.temporal.workflow.Workflow;
 import io.temporal.client.WorkflowClient;
 import io.temporal.client.WorkflowOptions;
 import io.temporal.serviceclient.WorkflowServiceStubs;
 import io.temporal.common.SearchAttributes;
-import patchversion.model.CustomerInfo;
-import patchversion.model.SimpleCustomerMap;
+import getversion.model.CustomerInfo;
+import getversion.model.SimpleCustomerMap;
 
 public class Starter {
 

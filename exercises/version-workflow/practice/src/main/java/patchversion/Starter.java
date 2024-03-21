@@ -1,8 +1,8 @@
-package patchversion;
+package getversion;
 
-import patchversion.model.ChargeInput;
-import patchversion.model.CustomerInfo;
-import patchversion.model.SimpleCustomerMap;
+import getversion.model.ChargeInput;
+import getversion.model.CustomerInfo;
+import getversion.model.SimpleCustomerMap;
 
 import io.temporal.client.WorkflowClient;
 import io.temporal.client.WorkflowOptions;

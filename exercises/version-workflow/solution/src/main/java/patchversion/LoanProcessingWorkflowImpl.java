@@ -1,9 +1,9 @@
-package patchversion;
+package getversion;
 
 import org.slf4j.Logger;
 
-import patchversion.model.CustomerInfo;
-import patchversion.model.ChargeInput;
+import getversion.model.CustomerInfo;
+import getversion.model.ChargeInput;
 
 import io.temporal.common.SearchAttributeKey;
 import io.temporal.workflow.Workflow;

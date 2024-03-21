@@ -1,4 +1,4 @@
-package patchversion;
+package getversion;
 
 public class Constants {
 

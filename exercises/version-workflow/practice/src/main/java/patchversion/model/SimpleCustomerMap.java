@@ -1,4 +1,4 @@
-package patchversion.model;
+package getversion.model;
 
 import java.util.HashMap;
 import java.util.Map;
