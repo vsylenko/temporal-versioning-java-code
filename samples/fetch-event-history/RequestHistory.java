@@ -1,4 +1,4 @@
-package patchversion;
+package getversion;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
