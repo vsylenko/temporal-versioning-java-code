@@ -2,7 +2,7 @@
 
 This repository provides code used for exercises and demonstrations
 included in the Java version of the
-[Versioning Workflows](https://learn.temporal.io/courses/temporal_versioning)
+[Versioning Workflows](https://learn.temporal.io/courses/versioning/)
 training course.
 
 It's important to remember that the example code used in this course was designed to support learning a specific aspect of Temporal, not to serve as a ready-to-use template for implementing a production system.
