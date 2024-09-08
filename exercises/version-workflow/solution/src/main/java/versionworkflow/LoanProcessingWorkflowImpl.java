@@ -1,12 +1,10 @@
-package getversion;
+package versionworkflow;
 
 import org.slf4j.Logger;
-
-import getversion.model.CustomerInfo;
-import getversion.model.ChargeInput;
-
 import io.temporal.common.SearchAttributeKey;
 import io.temporal.workflow.Workflow;
+import versionworkflow.model.ChargeInput;
+import versionworkflow.model.CustomerInfo;
 import io.temporal.activity.ActivityOptions;
 import java.util.Arrays;
 import java.util.List;

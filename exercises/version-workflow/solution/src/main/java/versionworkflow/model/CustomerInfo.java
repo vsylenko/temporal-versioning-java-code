@@ -1,4 +1,4 @@
-package getversion.model;
+package versionworkflow.model;
 
 public class CustomerInfo {
     private String customerID;

@@ -1,4 +1,4 @@
-package getversion;
+package versionworkflow;
 
 public class Constants {
 

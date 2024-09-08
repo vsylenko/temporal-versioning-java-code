@@ -1,8 +1,8 @@
-package getversion;
+package versionworkflow;
 
-import getversion.model.ChargeInput;
-import getversion.model.CustomerInfo;
-import getversion.model.SimpleCustomerMap;
+import versionworkflow.model.ChargeInput;
+import versionworkflow.model.CustomerInfo;
+import versionworkflow.model.SimpleCustomerMap;
 
 import io.temporal.client.WorkflowClient;
 import io.temporal.client.WorkflowOptions;

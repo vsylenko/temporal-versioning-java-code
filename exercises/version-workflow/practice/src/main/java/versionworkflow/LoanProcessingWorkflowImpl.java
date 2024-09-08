@@ -1,14 +1,14 @@
-package getversion;
+package versionworkflow;
 
 import org.slf4j.Logger;
 
-import getversion.model.CustomerInfo;
-import getversion.model.ChargeInput;
+import versionworkflow.model.CustomerInfo;
+import versionworkflow.model.ChargeInput;
 
 import io.temporal.workflow.Workflow;
 import io.temporal.common.SearchAttributeKey;
-import getversion.LoanProcessingActivities;
-import getversion.LoanProcessingWorkflow;
+import versionworkflow.LoanProcessingActivities;
+import versionworkflow.LoanProcessingWorkflow;
 import io.temporal.activity.ActivityOptions;
 
 import java.util.Arrays;

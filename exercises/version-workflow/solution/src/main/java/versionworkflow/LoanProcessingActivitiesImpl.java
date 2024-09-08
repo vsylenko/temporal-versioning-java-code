@@ -1,10 +1,9 @@
-package getversion;
-
-import getversion.model.ChargeInput;
-import getversion.model.CustomerInfo;
+package versionworkflow;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import versionworkflow.model.ChargeInput;
+import versionworkflow.model.CustomerInfo;
 
 public class LoanProcessingActivitiesImpl implements LoanProcessingActivities {
 

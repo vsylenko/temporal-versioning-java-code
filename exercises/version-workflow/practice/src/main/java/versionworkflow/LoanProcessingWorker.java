@@ -1,12 +1,12 @@
-package getversion;
+package versionworkflow;
 
 import io.temporal.client.WorkflowClient;
 import io.temporal.serviceclient.WorkflowServiceStubs;
 import io.temporal.worker.Worker;
 import io.temporal.worker.WorkerFactory;
 
-import getversion.LoanProcessingActivitiesImpl;
-import getversion.LoanProcessingWorkflowImpl;
+import versionworkflow.LoanProcessingActivitiesImpl;
+import versionworkflow.LoanProcessingWorkflowImpl;
 
 public class LoanProcessingWorker {
   public static void main(String[] args) {

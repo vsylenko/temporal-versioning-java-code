@@ -1,4 +1,4 @@
-package getversion;
+package versionworkflow;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
@@ -6,11 +6,12 @@ import java.io.File;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
-
 import io.temporal.testing.TestWorkflowEnvironment;
 import io.temporal.testing.TestWorkflowExtension;
 import io.temporal.testing.WorkflowReplayer;
 import io.temporal.worker.Worker;
+import versionworkflow.LoanProcessingWorkflow;
+import versionworkflow.LoanProcessingWorkflowImpl;
 
 public class LoanProcessingWorkflowTest {
 

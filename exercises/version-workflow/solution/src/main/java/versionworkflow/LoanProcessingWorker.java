@@ -1,4 +1,4 @@
-package getversion;
+package versionworkflow;
 
 import io.temporal.client.WorkflowClient;
 import io.temporal.serviceclient.WorkflowServiceStubs;

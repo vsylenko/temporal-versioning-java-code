@@ -1,4 +1,4 @@
-package getversion;
+package versionworkflow;
 
 import io.temporal.common.SearchAttributeKey;
 import java.util.List;

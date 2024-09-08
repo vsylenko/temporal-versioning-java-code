@@ -1,9 +1,9 @@
-package getversion;
+package versionworkflow;
 
 import io.temporal.workflow.WorkflowInterface;
 import io.temporal.workflow.WorkflowMethod;
 
-import getversion.model.CustomerInfo;
+import versionworkflow.model.CustomerInfo;
 
 @WorkflowInterface
 public interface LoanProcessingWorkflow {

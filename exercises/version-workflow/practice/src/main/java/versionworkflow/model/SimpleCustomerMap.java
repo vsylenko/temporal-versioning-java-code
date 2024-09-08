@@ -1,4 +1,4 @@
-package getversion.model;
+package versionworkflow.model;
 
 import java.util.HashMap;
 import java.util.Map;
