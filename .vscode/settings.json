@@ -24,5 +24,6 @@
     "workbench.editorAssociations": {
         "README.md": "vscode.markdown.preview.editor"
     },
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic"
 }
