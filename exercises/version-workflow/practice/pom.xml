@@ -5,16 +5,16 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.temporal.learn</groupId>
-  <artifactId>version-workflow-solution</artifactId>
+  <artifactId>version-workflow-practice</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>version workflow (solution)</name>
+  <name>version workflow</name>
   <url>https://learn.temporal.io</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -111,7 +111,5 @@
         </plugin>
       </plugins>
     </pluginManagement>
-
   </build>
-      
 </project>
