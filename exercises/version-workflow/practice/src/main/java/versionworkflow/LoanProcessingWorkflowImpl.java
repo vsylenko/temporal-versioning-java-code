@@ -1,19 +1,13 @@
 package versionworkflow;
 
-import org.slf4j.Logger;
-
-import versionworkflow.model.CustomerInfo;
-import versionworkflow.model.ChargeInput;
-
-import io.temporal.workflow.Workflow;
-import io.temporal.common.SearchAttributeKey;
-import versionworkflow.LoanProcessingActivities;
-import versionworkflow.LoanProcessingWorkflow;
-import io.temporal.activity.ActivityOptions;
-
-import java.util.Arrays;
 import java.time.Duration;
 import java.util.List;
+import org.slf4j.Logger;
+import io.temporal.activity.ActivityOptions;
+import io.temporal.common.SearchAttributeKey;
+import io.temporal.workflow.Workflow;
+import versionworkflow.model.ChargeInput;
+import versionworkflow.model.CustomerInfo;
 
 public class LoanProcessingWorkflowImpl implements LoanProcessingWorkflow {
 
@@ -36,8 +30,8 @@ public class LoanProcessingWorkflowImpl implements LoanProcessingWorkflow {
 
     int totalPaid = 0;
 
-    String confirmation = activities.sendThankYouToCustomer(info);
 
+    String confirmation = activities.sendThankYouToCustomer(info);
     for (int period = 1; period <= numberOfPeriods; period++) {
 
       ChargeInput chargeInput = new ChargeInput(customerId, amount, period, numberOfPeriods);
@@ -48,8 +42,9 @@ public class LoanProcessingWorkflowImpl implements LoanProcessingWorkflow {
       logger.info("Payment complete for period: {} Total Paid: {}", period, totalPaid);
 
       // using 3 seconds instead of 30 days for faster results
-      Workflow.sleep(Duration.ofSeconds(3));
+      Workflow.sleep(Duration.ofSeconds(90));
     }
+
 
     return String.format("Loan for customer %s has been fully paid (total=%d)", customerId,
         totalPaid);

@@ -1,12 +1,10 @@
 package versionworkflow;
 
-import versionworkflow.model.ChargeInput;
-import versionworkflow.model.CustomerInfo;
-import versionworkflow.model.SimpleCustomerMap;
-
 import io.temporal.client.WorkflowClient;
 import io.temporal.client.WorkflowOptions;
 import io.temporal.serviceclient.WorkflowServiceStubs;
+import versionworkflow.model.CustomerInfo;
+import versionworkflow.model.SimpleCustomerMap;
 
 public class Starter {
 
@@ -18,7 +16,7 @@ public class Starter {
 
     SimpleCustomerMap customers = new SimpleCustomerMap();
 
-    String customerId = args[0];
+    String customerId = "a100";
 
     CustomerInfo info = customers.get(customerId);
 
